@@ -39,32 +39,26 @@ graph TD
   pip install -r requirements.txt
 ```
 **4. Set Up Azure Resources**
-  * Create Azure ML Workspace (Guide).
-  
-  * Upload Data to Blob Storage:
-  
-  * historical_sales.csv
-  
-  * inventory.csv
-  
-  * suppliers.csv
-  
-  * Deploy AutoML Model (Use automl_training.ipynb).
-  
-  * Configure Azure Logic Apps (Sample Workflow).
-
+```
+  Create Azure ML Workspace (Guide).
+  Upload Data to Blob Storage:
+      - historical_sales.csv
+      - inventory.csv
+      - suppliers.csv
+  Deploy AutoML Model (Use automl_training.ipynb).
+  Configure Azure Logic Apps (Sample Workflow).
+```
 **5. Configure Environment Variables**
   * Create a .env file:
   ```
-  * AZURE_ML_ENDPOINT="http://your-azure-ml-endpoint.azurecontainer.io/score"
-  * AZURE_API_KEY="your-api-key"
-  * LOGIC_APP_URL="your-logic-app-trigger-url"
+    AZURE_ML_ENDPOINT="http://your-azure-ml-endpoint.azurecontainer.io/score"
+    AZURE_API_KEY="your-api-key"
+    LOGIC_APP_URL="your-logic-app-trigger-url"
   ```
 **6. Run the Streamlit Dashboard**
+  ```
   streamlit run app.py
   📂 File Structure
-  ```
-  .
   ├── data/                   # Synthetic datasets
   │   ├── historical_sales.csv
   │   ├── inventory.csv
@@ -74,10 +68,13 @@ graph TD
   ├── requirements.txt        # Python dependencies
   └── .env.example            # Environment template
   ```
-  📈 Demo Screenshots
-  Inventory Overview	Supplier Risks
-  Inventory	Suppliers
-**7. 🛠️ Customer Pain Points Addressed**
+
+## 📈 Demo Screenshots
+    - Inventory Overview
+    - Supplier Risks
+    - Inventory Suppliers
+    
+## 🛠️ Customer Pain Points Addressed**
   * Manual Ordering → AutoML Forecasting.
   
   * Stockouts → Real-Time Alerts.
