@@ -41,7 +41,7 @@ for product_id in products:
         )
 
 sales_df = pd.DataFrame(sales_data)
-sales_df.to_csv("./data/historical_sales.csv", index=False)
+sales_df.to_csv("../data/historical_sales.csv", index=False)
 
 # Generate Inventory Data
 inventory_data = []
@@ -81,7 +81,7 @@ for product_id in products:
         )
 
 inventory_df = pd.DataFrame(inventory_data)
-inventory_df.to_csv("./data/inventory.csv", index=False)
+inventory_df.to_csv("../data/inventory.csv", index=False)
 
 # Generate Supplier Data
 suppliers = [f"SUP_{i:02d}" for i in range(1, 11)]  # 10 suppliers
@@ -103,4 +103,4 @@ for product_id in products:
     )
 
 supplier_df = pd.DataFrame(supplier_data)
-supplier_df.to_csv("./data/suppliers.csv", index=False)
+supplier_df.to_csv("../data/suppliers.csv", index=False)
